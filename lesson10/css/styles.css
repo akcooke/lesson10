@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Global Styles
+__________________________ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	color: #401E06;	
+	margin: 0;
+	padding: 0;
+	 font-family: 'Staatliches', serif;
+        font-size: 20px;
+	}
+
+img {
+	width:300px;
+}
+a {
+	color: #301934;
+}
+a:hover {
+	text-decoration: none;
+}
+h2 {
+	margin: 0;
+}
+.content-wrap {
+	max-width: 800px;
+	width: 85%;
+	margin: 0 auto;
+	padding: 20px 0;
+	}
+
+/* Header
+__________________________ */
+.header {
+	width: 100%;
+	height: 80px;
+	display: block;
+	background-color:black;
+}
+
+.inner_header {
+	width: 1000px;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+	}
+
+.logo_container {
+	height: 100%;
+	display: table;
+	float: left;
+	}
+
+.logo_container h1 {
+	color: white;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 32px;
+	font-weight: 200;
+}
+
+.logo_container h1 span {
+	font-weight: 800;
+}
+
+/* Navigation NEW
+__________________________ */
+
+.navigation {
+	float:right;
+	height:100%;
+}
+
+.navigation a {
+	height: 100%;
+	display: table;
+	float: left;
+	padding: 0px 20px;	
+}
+
+.navigation a:last-child{
+	padding-right: 0;
+}
+
+.navigation a li {
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	color: white;
+	font-size: 16px;
+}
+/* Profile
+__________________________ */
+.about-item {
+	overflow: hidden;
+}
+.about-item img {
+	float: left;
+	margin-right: 20px;
+}
+
+/* Work Experience
+__________________________ */
+.work-experience {
+	background-image: url(../images/background.jpg);
+	background-size: cover;
+	background-position: top right; 
+	padding-bottom: 100px;
+}
+
+/* Contact Info
+__________________________ */
+footer {
+	background: #FFDCF4;
+	color: #3D4849;
+}
+.contact-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.contact-list a{
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	}
+
+/* Responsive
+__________________________ */
+@media screen and (min-width:750px){
+	header,footer {
+			text-align: center;
+	} 
+	.job-item {
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	column-gap: 20px;
+	
+	.contact-list {
+	display: grid;
+	justify-content: center;
+}
+		
+@media screen and (max-width:749px){
+	font-size: 75px;
+	line-height: 0.9;
+	margin-bottom: 20px;
+	}
+	h2 {
+		line-height: 1;
+	}
+		.contact-list a {
+			paddint: 5px;
+		}
